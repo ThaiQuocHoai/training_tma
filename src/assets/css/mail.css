@@ -1,0 +1,120 @@
+.mail .mail-container{
+  display: inline-grid;
+  grid-template-columns: 20% 30% 50%;
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* .mail-container .mail-container__leftside{ */
+  /* background-color: green; */
+  /* grid-column: 1/ span 1; */
+/* } */
+
+.mail-container .mail-container__leftside button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+}
+
+.mail-container .mail-container__leftside ul {
+  list-style-type: none;
+  display: none;
+  transition: .5s;
+}
+
+.mail-container .mail-container__leftside ul .new-email{
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mail-container .mail-container__leftside ul li h5{
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+  /* transition: .5s; */
+}
+
+.mail-container .mail-container__leftside ul li h5:hover{
+  font-weight: bold;
+  color: #42a5f5;
+}
+
+.mail-container .mail-container__leftside ul li .active-h5{
+  font-weight: bold!important;
+  color: #42a5f5!important;
+}
+
+.MuiSvgIcon-root{
+  transform: rotate(0deg);
+  transition: .5s;
+}
+
+.mail-container .mail-container__leftside ul.active{
+  display: block;
+  transition: .5s;
+}
+
+.MuiSvgIcon-root.active{
+  transform: rotate(90deg);
+}
+
+/* .mail-container .mail-container__midside{ */
+  /* background-color: blue; */
+  /* grid-column: 2/ span 2; */
+/* } */
+
+.mail-container .mail-container__midside .button-header{
+  display: flex;
+}
+
+.mail-container .mail-container__midside .button-header button{
+  border: none;
+  font-size: 12px;
+  margin-top: 3px;
+  background-color: transparent;
+}
+
+.mail-container .mail-container__midside .mail-name .mail-name__detail{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.mail-name .mail-name__detail .dot{
+  font-size: 40px;
+  color: gray;
+  margin-right: 20px;
+}
+
+.mail-name .mail-name__detail .mail-name__detail__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-container .mail-container__midside .mail-name .mail-name__detail span{
+  font-size: 13px;
+}
+
+.mail-container .mail-container__midside .mail-name .mail-name__detail .subject{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* .mail-container .mail-container__rightside{
+  background-color: red;
+   grid-column: 3 / span 3; 
+} */
+
+.mail-container .mail-container__rightside .right{
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 10px 0 0 40px;
+}

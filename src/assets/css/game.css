@@ -1,0 +1,36 @@
+.game .game__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game__info .game__info__image{
+  cursor: pointer;
+}
+
+.game__info .game__info__image img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.game__info .game__info__name {
+  background-color: lightgray;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.game__info .game__info__name h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
